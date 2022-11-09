@@ -1,3 +1,3 @@
 I use Personal Capital which is a financial aggregator like mint.com.  They show your total cash and total credit cards and plenty of other things.  But I always have to do the mental math to see how much I really have to spend (cash minus cards, ignoring loans) as I pay off credit cards each month.
 
-I created a Firefox Userscript (monkey patching).  I use it with ViolentMonkey but I think it should work with the other monkeypatching addons.
+I created a Firefox Userscript (monkey patching).  I use it with ViolentMonkey but I think it should work with the other monkeypatching addons.  It modifies the text in the total cash area to show the info I want.
