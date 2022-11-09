@@ -6,7 +6,6 @@
 // @run-at document-idle
 // ==/UserScript==
 
-console.log ("Hi there!");
 setTimeout( function () {
 if(window.location.href.indexOf("page/login/app#/dashboard") > 0) {
         let cashloc = document.querySelectorAll('[data-hj-masked=""].account__group-value.qa-account-group-value.tabular-numbers')[0];
@@ -21,9 +20,6 @@ if(window.location.href.indexOf("page/login/app#/dashboard") > 0) {
                 currency: 'USD',
         });
 
-        const currentA = document.querySelector(".menu__action.menu__action--referral-gift-box");
-        //cashloc.innerHTML = cashtext + "&nbsp &nbsp &nbsp &nbsp" + formatter.format(result);
         cashloc.innerHTML = cashtext + " - " + cardstext + " = " + formatter.format(result);
-        currentA.innerHTML = formatter.format(result);
 }}, 3000);
 
