@@ -7,7 +7,7 @@
 // ==/UserScript==
 
 setTimeout( function () {
-if(window.location.href.indexOf("page/login/app#/dashboard") > 0) {
+if(window.location.href.indexOf("page/login/app#") > 0) {
         let cashloc = document.querySelectorAll('[data-hj-masked=""].account__group-value.qa-account-group-value.tabular-numbers')[0];
         let cashtext = cashloc.textContent;
         let cardstext = document.querySelectorAll('[data-hj-masked=""].account__group-value.qa-account-group-value.tabular-numbers')[2].textContent;
