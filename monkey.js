@@ -16,6 +16,7 @@ function printit() {
         const spend = cash - cards;
         const formatter = new Intl.NumberFormat('en-US', {
                 style: 'currency',
+                maximumFractionDigits: 0,
                 currency: 'USD',
         });
         const assetstext = document.querySelectorAll('.net-worth-bar__value.js-net-worth-bar-value.tabular-numbers')[0].textContent;
